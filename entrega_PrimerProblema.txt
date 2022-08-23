@@ -1,0 +1,2 @@
+La idea inicial para la resolución del problema es generar un grafo con las distintas prendas como nodos, y que las interrelaciones entre ellas sean su incomátiblidad entre las mismas.
+Una vez creado el grafo con el archivo que nos pasan, se pasa a la solucion, realizando un algoritmo en donde nos devuelva los lavados con ropa compatible, y que el conjunto de la misma sea el menor de todas las posibilidades.
