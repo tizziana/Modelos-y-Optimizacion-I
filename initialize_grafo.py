@@ -10,11 +10,11 @@ def mannage_line(lavanderia, line):
 		lavanderia.agregar_prenda(line[1], line[2])
 
 
-def creacion_grafo():
+def create_grafo():
+
 	try:
 		lavanderia = Lavanderia()
 		with open("Primer_Problema.txt", 'r') as file:
-			
 			for line in file:
 				mannage_line(lavanderia, line.split())		
 

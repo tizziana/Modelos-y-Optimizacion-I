@@ -1,4 +1,4 @@
-def generar_archivo_solucion(solucion):
+def generate_solution(solucion):
 	with open("solucion.txt", "w+") as sol:
 		for numero_lavado, prendas in solucion.items():
 			for prenda in prendas:

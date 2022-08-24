@@ -1,5 +1,5 @@
-from initialize_grafo import creacion_grafo
-from create_txt import generar_archivo_solucion
+from initialize_grafo import create_grafo
+from create_txt import generate_solution
 
 def solucion_lavados(lavanderia):
 	lavados = {}
@@ -18,8 +18,8 @@ def solucion_lavados(lavanderia):
 
 
 def main():
-	lavanderia = creacion_grafo()
-	generar_archivo_solucion(solucion_lavados(lavanderia))
+	lavanderia = create_grafo()
+	generate_solution(solucion_lavados(lavanderia))
 
 
 main()
