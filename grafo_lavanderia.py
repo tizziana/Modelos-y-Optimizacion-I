@@ -16,16 +16,9 @@ class Lavanderia:
 	def agregar_prendas_incompatibles(self, prenda1, prenda2):
 		self.prendas_incompatibles.setdefault(prenda1, []).append(prenda2)
 		self.cantidad_aristas += 1
-		return True
-
+		
 	def obtener_incompatibilidades(self, prenda):
 		return self.prendas_incompatibles[prenda]
-
-	def obtener_cant_prendas(self):
-		return self.cantidad_vertices
-
-	def obtener_cant_incompatibilidades(self):
-		return self.cantidad_aristas
 
 	def obtener_prendas(self):
 		return self.prendas_tiempo_lavado
@@ -38,3 +31,9 @@ class Lavanderia:
 				compatible = False
 
 		return compatible
+
+	def obtener_cant_prendas(self):
+		return self.cantidad_vertices
+
+	def obtener_cant_incompatibilidades(self):
+		return self.cantidad_aristas
