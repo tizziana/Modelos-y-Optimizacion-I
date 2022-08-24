@@ -1,2 +1,6 @@
 La idea inicial para la resolución del problema es generar un grafo con las distintas prendas como nodos, y que las interrelaciones entre ellas sean su incomátiblidad entre las mismas.
 Una vez creado el grafo con el archivo que nos pasan, se pasa a la solucion, realizando un algoritmo en donde nos devuelva los lavados con ropa compatible, y que el conjunto de la misma sea el menor de todas las posibilidades.
+
+Para poder tener, cuando sumamos el tiempo total de todos los lavados, el menor de los tiempos, lo que se hace es poner en un mismo lavado, siempre y cuando sean compatibles, prendas que tengas un tiempo similar. 
+Lo primero que hago es ordenar el diccionario de todas las prendas que tengo, teniendo en cuenta el tiempo de lavado. Luego armo buckets con los diferentes lavados.
+El primer bucket tiene la prenda con el valor mas alto. Luego se van insertando las prendas al primer bucket posible, con el valor mas alto posible. En  el caso de no poder entrar en ningun bucket existente crea uno nuevo.
