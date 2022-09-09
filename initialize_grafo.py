@@ -14,7 +14,7 @@ def create_grafo():
 
 	try:
 		lavanderia = Lavanderia()
-		with open("Primer_Problema.txt", 'r') as file:
+		with open("Segundo_Problema.txt", 'r') as file:
 			for line in file:
 				mannage_line(lavanderia, line.split())		
 
