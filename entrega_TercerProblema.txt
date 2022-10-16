@@ -1,0 +1,4 @@
+Para la entrega de este ejercicio me enfrenté con mas obstáculos, ya que venía pensando todo de una forma mas del lado de la programación, y
+me costó un poco llevarlo al lado de las variables bivalentes, pero creo que una vez que le encontré la vuelta a eso, el modelo empezó a parecerme
+un poquito mas sencillo.  Así que al principio me resultó bastante complejo, pero luego pude ir avanzando y dandome cuenta que la complejidad que
+pensaba que tenia era mayor en mi cabeza.
