@@ -1,4 +1,5 @@
 from grafo_lavanderia import Lavanderia
+PROBLEM_FILE = 'Cuarto_Problema.txt'
 
 def mannage_line(lavanderia, line):
 	type = line[0]
@@ -14,7 +15,7 @@ def create_grafo():
 
 	try:
 		lavanderia = Lavanderia()
-		with open("Segundo_Problema.txt", 'r') as file:
+		with open(PROBLEM_FILE, 'r') as file:
 			for line in file:
 				mannage_line(lavanderia, line.split())		
 

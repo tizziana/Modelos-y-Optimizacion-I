@@ -1,5 +1,8 @@
-from initialize_grafo import create_grafo
 from create_txt import generate_solution
+from initialize_grafo import create_grafo
+from solucion_tiempo import tiempo_total_lavados
+
+CREATE_FILE = 'solucion4.txt'
 
 def solucion_lavados(lavanderia):
 	lavados = {}
@@ -20,6 +23,9 @@ def solucion_lavados(lavanderia):
 def main():
 	lavanderia = create_grafo()
 	generate_solution(solucion_lavados(lavanderia))
+	tiempo_total, lavados_totales = tiempo_total_lavados(lavanderia, CREATE_FILE)
+	print('El tiempo que tarda en lavar todas las prendas es de ' + str(tiempo_total) +
+	', y se hace en '+ str(lavados_totales) + ' lavados')
 
 
 main()
